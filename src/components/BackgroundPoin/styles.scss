@@ -1,0 +1,18 @@
+.background-point{
+    // background-image: url("./1.png"), url('./2.png'), url("./3.png"), url('./4.png');
+    background-image: url("./1.png"), url('./2.png'), url('./4.png');
+    width: 1440px;
+    margin: 0px auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    // background-position: 670px 7px, 305px 804px, 410px 2892px, 380px 4421px;
+    // background-size: 598px 787px, 958px 1516px, 698px 1434px, 369px 759px;
+    background-position: 670px 7px, 305px 804px, 380px 4421px;
+    background-size: 598px 787px, 958px 1516px, 369px 759px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}

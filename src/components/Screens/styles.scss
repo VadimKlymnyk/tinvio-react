@@ -1,0 +1,90 @@
+.section-five{
+    background: white;
+
+    .information{
+        padding-top: 140px;
+        height: 842px;
+        max-width: 1540px;
+        text-align: center;
+        margin: 0px auto;
+
+        .container-title{
+            display: flex;
+            justify-content: center;
+            height: 90px;
+
+            h1{
+                width: 441px;
+                margin: 0;
+                padding-right: 130px;
+                font-size: 32px;
+                font-weight: bold;
+                color: #21272e;
+                text-align: left;
+            }
+
+            h4{
+                width: 449px;
+                margin: 0;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.67;
+                color: #787c80;
+                text-align: left;
+            }
+
+        }
+
+        .list-screen{
+            display: flex;
+            margin-top: 78px;
+            justify-content: center;
+
+            .container-screen:nth-child(2){
+                margin: 0 42px;
+            }
+
+            .container-screen{
+                width: 316px;
+                height: 552px;
+                border-radius: 52px;
+                background-color: #e1eff0;
+                position: relative;
+                z-index: 2;
+
+                .screen-image{
+                    width: 100%;
+                    position: absolute;
+                    left: -45px;
+                    top: 36px;
+                }
+
+
+                .screen-footer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 500px;
+
+                    h5{
+                        margin: 0;
+                        opacity: 0.4;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 2.14;
+                        text-align: center;
+                        color: #21272e;
+                    }
+
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        opacity: 0.4;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

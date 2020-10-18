@@ -1,0 +1,96 @@
+.section-six{
+    height: 503px;
+    position: relative;
+    z-index: 2;
+
+    .section-container{
+        padding-top: 88px;
+        align-items: center;
+
+        .title-container{
+
+            h3{
+                margin: 0;
+                margin-bottom: 16px;
+                font-size: 13px;
+                line-height: 18px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #f43939;
+            }
+
+            h1{
+                margin: 0;
+                margin-bottom: 87px;
+                font-size: 32px;
+                line-height: 44px;
+                font-weight: bold;
+                text-align: center;
+                color: #21272e;
+            }
+
+
+        
+        }
+
+        .steps{
+            display: flex;
+            justify-content: space-around;
+
+            .container-step{
+                text-align: center;
+
+                .step-image{
+                    width: 57px;
+                    height: 56px;
+                    margin-bottom: 32px;
+
+                    
+                }
+
+                .step-footer{
+
+                    h2{
+                        margin: 0;
+                        margin-bottom: 8px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-align: center;
+                        color: #21272e;
+                    }
+
+                    h4{
+                        margin: 0;
+                        width: 200px;
+                        height: 38px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-align: center;
+                        color: #787c80;
+                    }
+                }
+                &:nth-child(2):before, &:nth-child(1):before{
+                    content: '';
+                    width: 272px;
+                    height: 2px;
+                    opacity: 0.1;
+                    background-color: #21272e;
+                    position: absolute;
+                    margin-top: 28px;
+                    margin-left: 89px;
+                }
+            }
+
+            
+        }
+
+        .steps::after{
+            width: 272px;
+            height: 2px;
+            opacity: 0.1;
+            background-color: #21272e;
+            position: absolute;
+        }
+    }
+}

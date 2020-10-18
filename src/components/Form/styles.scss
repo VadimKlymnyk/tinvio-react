@@ -1,0 +1,109 @@
+.base-form{
+    width: 343px;
+    // height: 461px;
+    padding: 32px;
+    border-radius: 13px;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+    .form-items{
+        // padding: 32px;
+        // width: 343px;
+
+        .form-title{
+            h3{
+                margin: 0;
+                margin-bottom: 40px;
+                font-size: 18px;
+                font-weight: bold;
+                color: #21272e;
+            }
+        }
+
+        .form-item{
+            height: 88px;
+
+            .input-container{
+                padding-top: 9px;
+                max-height: 56px;
+                position: relative;
+
+                input{
+                    position: absolute;
+                    width: 310px;
+                    padding: 18px 16px;
+                    // height: 100%;
+                    border-radius: 10px;
+                    border: solid 1px rgba(144, 149, 153, 0.35);
+                    background-color: white;
+                    z-index: 10;
+                    font-weight: 500;
+                    line-height: 1.36;
+                    color: #b4babf;
+
+                    &:focus{
+                        outline: 0;
+                        border: solid 1px #3897ff
+                    }
+                }
+
+                img{
+                    position: absolute;
+                    z-index: 20;
+                    left: 191px;
+                    top: 25px;
+                }
+
+                .pre-phone{
+                    width: 65px;
+                }
+
+                .main-phone{
+                    width: 200px;
+                }
+            }
+        }
+        .form-item-phone{
+            display: flex;
+
+            .form-item:first-child{
+                width: 96px;
+                margin-right: 16px;
+            }
+        }
+
+        .form-footer{
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+
+            button{
+                cursor: pointer;
+                width: 172px;
+                height: 52px;
+                border-radius: 8px;
+                background-image: linear-gradient(107deg, #ff474d, #fa4353);
+                border: none;
+                margin-right: 34px;
+                font-size: 15px;
+                font-weight: bold;
+                line-height: 1.33;
+                text-align: center;
+                color: white;
+                z-index: 10;
+
+                &:focus{
+                    outline: 0;
+                }
+            }
+
+            p{
+                font-size: 12px;
+                font-weight: 500;
+                color: #909599;
+            }
+        }
+    }
+
+
+}

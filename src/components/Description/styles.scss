@@ -1,0 +1,87 @@
+.section{
+    height: 620px;
+    width: 100%;
+
+    .background-img{
+        background-image: url("./Boxes.png"), url('./Fruits.png');
+        background-repeat: no-repeat;
+        max-width: 1510px;
+        margin: 0px auto;
+        height: 700px;
+        background-position: left -20px top 45px, right 0 top 20px;
+        background-size: 400px, 340px;
+    }
+    @media screen and (max-width: 1450px) {
+        .background-img{
+            background-position: left -120px top 45px, right -85px top 20px;
+        }
+    }
+
+    .section-title{
+        padding-top: 115px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            margin: 0;
+            margin-bottom: 16px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #f43939;
+        }
+
+        .title-container{
+            width: 812px;
+            margin-bottom: 40px;
+
+            h1{
+                margin: 0;
+                padding: 0 25px;
+                font-size: 40px;
+                line-height: 56px;
+                font-weight: bold;
+                text-align: center;
+                color: #21272e;
+            }
+        }
+    }
+
+    .section-button{
+        text-align: center;
+        
+        button{
+            position: relative;
+            cursor: pointer;
+            width: 214px;
+            height: 52px;
+            border-radius: 8px;
+            background-image: linear-gradient(104deg, #ff474d, #fa4353);
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            margin-bottom: 16px;
+            z-index: 10;
+            transition: 0.25s;
+
+            &:hover{
+                
+                transform: translateY(-0.25em);
+            }
+
+            &:focus{
+                outline: 0;
+            }
+        }
+
+        h5{
+            margin: 0;
+            font-size: 12px;
+            font-weight: 500;
+            color: #909599;
+        }
+    }
+    
+}

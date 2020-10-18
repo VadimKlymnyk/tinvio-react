@@ -1,0 +1,43 @@
+.base{
+    width: 288px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.2);
+    background-color:white;
+    z-index: 10;
+
+    .base-container{
+        width: 240px;
+        height: 110px;
+        padding: 20px 24px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .item-container{
+            display: flex;
+            text-align: center;
+            margin-bottom: 8px;
+
+            span{
+                font-family: AppleColorEmoji;
+                margin-right: 8px;
+                font-size: 14px;
+            }
+
+            h5{
+                margin: 0;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.36;
+                color: #21272e;
+            }
+        }
+
+    }
+}
+
+@font-face {
+    font-family: AppleColorEmoji;
+    src: url('../../fonts/AppleColorEmoji.ttf');
+}
