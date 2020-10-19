@@ -1,6 +1,6 @@
 .section-seven{
     height: 816px;
-    background-image: linear-gradient(to top, #fafafc, rgba(255, 255, 255, 0.45));
+    background: white;
 
     .section-container{
         padding-top: 223px;
@@ -93,9 +93,50 @@
                 }
             }
         }
-    }
-
+    } 
+}
+@media screen and (max-width: 1279px) {
+    .section-seven{
+        height: 915px;
+        .section-container{
+            padding-top: 246px;
+            .left-column{
+                margin-right: 130px;
+                h4{
+                }
     
+                h1{
+                }
+    
+                .countries-container{
+                    margin-top: 130px;
+                    .arrow-text{    
+                        left: auto;
+                        img{
+                        }
+    
+                        p{
+                        }
+                    }
+                }
+            }
+    
+            .right-column{
+                margin-top: 110px;
+                .form-container{
+    
+                    .arrow-text{
+                        top: -207px;
+                        img{
+                        }
+    
+                        p{
+                        }
+                    }
+                }
+            }
+        } 
+    }
 }
 @font-face {
     font-family: HandOfSeanPro;

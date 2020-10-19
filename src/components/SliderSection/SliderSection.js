@@ -68,7 +68,7 @@ function SliderSection() {
                 </div>
                 <div className='slider-image'>
                     <div className='image-container'>
-                        <img className='carousel-image' src={list[sliderIndex].image}></img>
+                        <img className={`carousel-image${sliderIndex}`} src={list[sliderIndex].image}></img>
                     </div>
                 </div>
             </div>

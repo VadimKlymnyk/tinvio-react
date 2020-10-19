@@ -8,7 +8,7 @@ function Communication() {
     const [visible, setVisible] = useState(false)
 
     useEffect(() => {
-        console.log('object')
+        // console.log('object')
         const anim = lottie.loadAnimation({
             container: document.querySelector('#animation'),
             animationData: animation,

@@ -83,8 +83,37 @@
                     }
                 }
             }
-
         }
     }
+}
 
+@media screen and (max-width: 1279px) {
+    .section-five{
+        .information{
+            height: 732px;
+            .container-title{
+                padding-left: 70px;
+                h1{
+                    padding-right: 100px;
+                }
+            }
+            .list-screen{
+                .container-screen:nth-child(2){
+                    margin: 0 46px;
+                }
+                .container-screen{
+                    width: 265px;
+                    height: 464px;
+                    border-radius: 46.8px;
+                    .screen-image{
+                        left: -35px;
+                        top: 32px;
+                    }
+                    .screen-footer{
+                        padding-top: 410px;
+                    }
+                }
+            }
+        }
+    }
 }

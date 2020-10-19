@@ -6,17 +6,15 @@
         max-width: 1540px;
         height: 592px;
         display: flex;
-        // justify-content: space-between;
         margin: 0px auto;
         overflow: hidden;
-        /* position: relative; */
         z-index: 2;
     
 
         .slider-menu{
             padding-left: 77px;
             min-width: 381px;
-
+            width: 381px;
             margin-right: 75px;
 
             .title-container{
@@ -27,6 +25,7 @@
                 padding-top: 143px;
                 margin: 0;
                 margin-bottom: 24px;
+                line-height: 44px;
                 width: 290px;
                 font-size: 32px;
                 font-weight: bold;
@@ -36,6 +35,7 @@
             h4{
                 margin: 0;
                 font-size: 18px;
+                font-weight: 500;
                 line-height: 1.67;
                 color: #787c80;
             }
@@ -58,7 +58,7 @@
                     img{
                         width: 24px;
                         height: 24px;
-                        
+                        margin-top: 5px;
                     }
 
                     .left-icon{
@@ -82,7 +82,6 @@
                     align-items: center;
                     text-align: center;
                     justify-content: center;
-                    
                 }
 
                 span{
@@ -104,6 +103,25 @@
                         }
                         &.active{
                             background-color: #21272e;
+                            transform: scale(1);
+                            animation: pulse-black 2s infinite;
+                        }
+                        
+                        @keyframes pulse-black {
+                            0% {
+                                transform: scale(0.95);
+                                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+                            }
+                            
+                            70% {
+                                transform: scale(1);
+                                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+                            }
+                            
+                            100% {
+                                transform: scale(0.95);
+                                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                            }
                         }
                     }
                 }  
@@ -112,22 +130,73 @@
 
         .slider-image{
             height: 592px;
-            width: 970px;
+            width: 1000px;
             background: #fcede8;
             flex-shrink: 0;
             border-radius: 50px;
             position: relative;
+            z-index: 2;
 
             .image-container{
                 width: 100%;
                 height: 100%;
                 position: relative;
-            }
 
-            img{
-                position: absolute;
-                height: 546px;
-                margin-top: 46px;
+                img{
+                    position: absolute;
+                    height: 546px;
+                    width: 98%;
+                    margin-top: 46px;
+                    margin-left: -20px;
+                }
+
+                .carousel-image1{
+                    position: absolute;
+                    height: 510px;
+                    width: auto;
+                    margin-top: 44px;
+                    margin-left: 48px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .section-three{
+        padding-bottom: 61px;
+    
+        .slider{
+            max-width: 100%;
+            height: auto;
+            flex-direction: column-reverse;
+            margin-left: 68px;
+
+            .slider-menu{
+                display: flex;
+                margin-top: 40px;
+                padding: 0px;
+
+                h1{
+                    padding-top: 0;
+                }
+
+                h4{
+                    width: 381px;
+                }
+
+                .title-container{
+                    margin-right: 95px;
+                    min-height: 0;
+                }
+                .select-container{
+                    margin-top: 8px;
+
+                    .slider-dots{
+                        align-items: flex-start;
+                        margin-top: 15px;
+                    }
+                }
             }
         }
     }

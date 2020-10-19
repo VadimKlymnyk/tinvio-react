@@ -26,20 +26,22 @@ function Steps() {
     return (
         <section className='section-six'>
             <div className='section-container'>
-                <div className='title-container'>
-                    <h3>ARE YOU READY?</h3>
-                    <h1>3 Simple Steps to Get Started</h1>
-                </div>
-                <div className='steps'>
-                    {list.map((item, i) => 
-                        <div key={Date.now()+i} className='container-step'>
-                            <img className='step-image' src={item.icon}></img>
-                            <div className='step-footer'>
-                                <h2>{item.title}</h2>
-                                <h4>{item.text}</h4>
+                <div className='container'>
+                    <div className='title-container'>
+                        <h3>ARE YOU READY?</h3>
+                        <h1>3 Simple Steps to Get Started</h1>
+                    </div>
+                    <div className='steps'>
+                        {list.map((item, i) => 
+                            <div key={Date.now()+i} className='container-step'>
+                                <img className='step-image' src={item.icon}></img>
+                                <div className='step-footer'>
+                                    <h2>{item.title}</h2>
+                                    <h4>{item.text}</h4>
+                                </div>
                             </div>
-                        </div>
-                    )}
+                        )}
+                    </div>
                 </div>
             </div>
         </section>
