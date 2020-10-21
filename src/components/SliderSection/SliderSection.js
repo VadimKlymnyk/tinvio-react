@@ -57,18 +57,18 @@ function SliderSection() {
                         <h4>{list[sliderIndex].text}</h4>
                     </div>
                     <div className='select-container'>
-                        <button onClick={handleMinus}><img className='left-icon' src={iconBtn}></img></button>
+                        <button onClick={handleMinus}><img alt='' className='left-icon' src={iconBtn}></img></button>
                         <div className="slider-dots">
                             <span onClick={() => setSliderIndex(0)}><div className="dot"/></span> 
                             <span onClick={() => setSliderIndex(1)}><div className="dot"/></span> 
                             <span onClick={() => setSliderIndex(2)}><div className="dot"/></span> 
                         </div>
-                        <button onClick={handlePlus}><img src={iconBtn}></img></button>
+                        <button onClick={handlePlus}><img alt='' src={iconBtn}></img></button>
                     </div>
                 </div>
                 <div className='slider-image'>
                     <div className='image-container'>
-                        <img className={`carousel-image${sliderIndex}`} src={list[sliderIndex].image}></img>
+                        <img alt='' className={`carousel-image${sliderIndex}`} src={list[sliderIndex].image}></img>
                     </div>
                 </div>
             </div>

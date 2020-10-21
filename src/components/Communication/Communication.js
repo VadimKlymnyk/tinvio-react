@@ -6,15 +6,16 @@ import './styles.scss'
 
 function Communication() {
     const [visible, setVisible] = useState(false)
+    
 
     useEffect(() => {
-        // console.log('object')
-        const anim = lottie.loadAnimation({
-            container: document.querySelector('#animation'),
-            animationData: animation,
-        })
-        if(visible) anim.play()
-        // else anim.stop()
+            const anim = lottie.loadAnimation({
+                container: document.querySelector('#animation'),
+                animationData: animation,
+            })
+            if(visible)anim.play()
+            else anim.pause()
+         
     }, [visible])
 
     useEffect(() => {
@@ -42,7 +43,7 @@ function Communication() {
                         <div className='image-container'>
                             { visible 
                             ? <div id='animation'></div>
-                            : <img className='carousel-image' src={Before}></img>}
+                            : <img alt='' className='carousel-image' src={Before}></img>}
                         </div>
                     </div>
                     <div className='communication-menu'>

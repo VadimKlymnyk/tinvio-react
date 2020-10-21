@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {Link} from "react-router-dom";
 import './styles.scss'
 import Logo from './logo.svg'
+import iconMenu from './icon-menu.png'
 
 export const Header = () => {
+    const [small, setSmall] = useState(false)
+
     window.onscroll = () => scrollFunc()
+    window.onresize = () => sizeFunc()
+
+    useEffect(() => {
+        sizeFunc()
+    }, [])
 
     const scrollFunc = () => {
         if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
@@ -14,6 +22,15 @@ export const Header = () => {
         }
     }
 
+    const sizeFunc = () => {
+        if(window.innerWidth < 768) setSmall(true)
+        if(window.innerWidth >= 768) setSmall(false)
+    }
+
+    const handleClick = () => {
+        console.log('Open menu')
+    }
+
     return (
         <div className='header-top'>
             <div id='header' className='header-main'>
@@ -21,10 +38,9 @@ export const Header = () => {
                     <header className='header'>
                         <div className='navbar'>
                             <Link to='/'>
-                                <img src={Logo} className='logo'/>
+                                <img alt='' src={Logo} className='logo'/>
                             </Link>
-                            <nav className='header-menu'>
-                                {/* <div className="divider"/> */}
+                            {!small ? <nav className='header-menu'>
                                 <Link to='/'>
                                     Home
                                 </Link>
@@ -37,12 +53,16 @@ export const Header = () => {
                                 <Link to='/contract'>
                                     Contact
                                 </Link>
-                            </nav>
+                            </nav> : null}
                         </div> 
                         <div className='btn-container'>
-                            <button className='header-btn'>
-                                Get Started
-                            </button>
+                            {small ? <span className='icon-menu' onClick={handleClick}>
+                                        <img alt='' src={iconMenu} />
+                                     </span>
+                                   :    <button className='header-btn'>
+                                            Get Started
+                                        </button>
+                            }
                         </div> 
                     </header> 
                 </div>

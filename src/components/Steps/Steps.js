@@ -34,7 +34,7 @@ function Steps() {
                     <div className='steps'>
                         {list.map((item, i) => 
                             <div key={Date.now()+i} className='container-step'>
-                                <img className='step-image' src={item.icon}></img>
+                                <img alt='' className='step-image' src={item.icon}></img>
                                 <div className='step-footer'>
                                     <h2>{item.title}</h2>
                                     <h4>{item.text}</h4>

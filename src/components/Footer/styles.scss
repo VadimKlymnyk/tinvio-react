@@ -15,6 +15,16 @@ footer{
         nav{
             margin-bottom: 7px;
         }
+        
+        .right-reserved{
+            position: absolute;
+            bottom: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.25);
+            margin-left: 10px;
+        }
 
         nav, .social-media{
             z-index: 10;
@@ -50,6 +60,72 @@ footer{
 
             a:last-child{
                 margin-left: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    footer{
+        height: 193px;
+        .information{
+            flex-wrap: wrap;            
+            nav{
+                width: 80%;
+            }
+            .right-reserved{
+                margin-left: 15px;
+                position: inherit;
+                bottom: 45px;
+                margin-right: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer{
+        height: 546px;
+        .information{
+            padding-top: 48px;
+            flex-direction: column;      
+            .logo-container{
+                padding-bottom: 40px;
+                height: 48px;
+            }      
+            nav{
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                &::before{
+                    content: '';
+                    display: none;
+                }
+                a{
+                    padding-bottom: 24px;
+
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            .social-media {
+                &::before{
+                    content: '';
+                    display: none;
+                }
+                a:last-child{
+                    margin-right: 0;
+                }
+            }
+            .right-reserved{
+                margin-left: 0;
+                margin-right: 0;
+                position: absolute;
+                bottom: 16px;
+            }
+            .application{
+                margin: 20px auto;
             }
         }
     }

@@ -4,8 +4,9 @@ import './styles.scss'
 function Description() {
 
     const handleClick = () => {
+        const form = document.getElementById('form-get-started').getBoundingClientRect()
         window.scrollTo({
-            top: 4400,
+            top: form.top - 70,
             behavior: "smooth"
         })
     }
@@ -21,7 +22,7 @@ function Description() {
                     </div>
                     <div className='section-button'>
                         <button onClick={handleClick}>Get Started Now</button>
-                        <h5>Yes, it’s free 🎉</h5>
+                        <h5>Yes, it’s free <span role="img" aria-label="img">🎉</span></h5>
                     </div>
                 </div>
             </div>

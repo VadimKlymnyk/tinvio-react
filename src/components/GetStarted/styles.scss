@@ -107,7 +107,6 @@
     
                 h1{
                 }
-    
                 .countries-container{
                     margin-top: 130px;
                     .arrow-text{    
@@ -120,16 +119,13 @@
                     }
                 }
             }
-    
             .right-column{
                 margin-top: 110px;
                 .form-container{
-    
                     .arrow-text{
                         top: -207px;
                         img{
                         }
-    
                         p{
                         }
                     }
@@ -138,6 +134,76 @@
         } 
     }
 }
+
+@media screen and (max-width: 1023px) {
+    .section-seven{
+        height: 1187px;
+        .section-container{
+            padding-top: 105px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .left-column{
+                margin-right: 0;
+                h4{
+                }
+                h1{
+                    font-size: 32px;
+                    line-height: 44px;
+                }
+                .countries-container{
+                    margin-top: 730px;
+                    .arrow-text{    
+                        left: 180px;
+                    }
+                }
+            }
+            .right-column{
+                margin-top: -730px;
+                .form-container{
+                    .arrow-text{
+                        top: -107px;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-seven{
+        height: 1187px;
+        .section-container{
+            padding-top: 68px;
+            .left-column{
+                width: 100%;
+                text-align: center;
+                h1{
+                    font-size: 28px;
+                    line-height: 39px;
+                }
+                .countries-container{
+                    margin-top: 751px;
+                    .arrow-text{    
+                        left: calc(50% - 120px);
+                    }
+                }
+            }
+            .right-column{
+                margin-top: -775px;
+                width: 100%;
+                text-align: center;
+                .form-container{
+                    .arrow-text{
+                        top: -95px;
+                        left: calc(50% - 140px);
+                    }
+                }
+            }
+        } 
+    }
+}
+
 @font-face {
     font-family: HandOfSeanPro;
    src: url('../../fonts/Hand_Of_Sean_Demo.ttf'),     

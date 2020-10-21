@@ -14,8 +14,8 @@ const Footer = () => {
         <footer>
             <div className='container'>
                 <div className='information'>
-                    <Link to='/'>
-                        <img src={logo} className='logo'/>
+                    <Link to='/' className='logo-container'>
+                        <img alt='' src={logo} className='logo'/>
                     </Link>
                     <nav>
                         {list.map((item, i) => 
@@ -24,20 +24,21 @@ const Footer = () => {
                             </Link>
                         )}
                     </nav>
+                    <div className='right-reserved'>© Tinvio™ 2019. All Rights Reserved</div>
                     <div className='social-media'>
-                        <a href='http://instagram.com' target='_blank'>
-                            <img src={inst} />
+                        <a href='instagram.com' target='_blank'>
+                            <img alt='' src={inst} />
                         </a>
-                        <a href='http://linkedin.com' target='_blank'>
-                            <img src={linkedIn} />
+                        <a href='linkedin.com' target='_blank'>
+                            <img alt='' src={linkedIn} />
                         </a>
                     </div>
                     <div className='application'>
-                        <a to='https://www.apple.com/' target='_blank'>
-                            <img src={appStore} />
+                        <a href='apple.com' target='_blank'>
+                            <img alt='' src={appStore} />
                         </a>
-                        <a to='https://play.google.com/' target='_blank'>
-                            <img src={googlePlay} />
+                        <a href='play.google.com' target='_blank'>
+                            <img alt='' src={googlePlay} />
                         </a>
                     </div>
                 </div>

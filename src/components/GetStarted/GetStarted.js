@@ -15,7 +15,7 @@ function GetStarted() {
                         <h1>Fill up the form and we’ll get in touch within a few hours</h1>
                         <div className='countries-container'>
                             <div className='arrow-text'>
-                                <img src={right}></img>
+                                <img alt='' src={right}></img>
                                 <p>Or meet us in</p>
                             </div>
                             <Countries/>
@@ -24,7 +24,7 @@ function GetStarted() {
                     <div className='right-column'>
                         <div className='form-container'>
                             <div className='arrow-text'>
-                                <img src={left}></img>
+                                <img alt='' src={left}></img>
                                 <p>Let’s get to know each other</p>
                             </div>
                             <Form/>

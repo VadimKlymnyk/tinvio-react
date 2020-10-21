@@ -64,3 +64,20 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .section-two{
+        padding-bottom: 44px;
+        .img-home-page{
+            margin-top: -70px;
+        }
+        h1{
+            padding: 20px 0;
+            font-size: 27px;
+            line-height: normal;
+        }
+        .list-logo{
+            flex-wrap: nowrap;
+        }
+    }
+}

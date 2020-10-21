@@ -51,7 +51,7 @@
                     border: solid 1px #dae1e8;
                     background-color: #f0f1f2;
                     border-radius: 50%;
-                    z-index: 10;
+                    z-index: 8;
                     padding: 0;
                     
 
@@ -88,7 +88,7 @@
                     cursor: pointer;
                     width: 18px;
                     height: 18px;
-                    z-index: 10;
+                    z-index: 8;
 
                     .dot{
                         margin: 6px;
@@ -195,6 +195,66 @@
                     .slider-dots{
                         align-items: flex-start;
                         margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-three{
+        padding-bottom: 0;
+        height: 800px;
+    
+        .slider{
+            margin-left: 0;
+
+            .slider-menu{
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 100%;
+
+                h1{
+                    font-size: 28px;
+                    line-height: 39px;
+                    margin: 0 auto;
+                    margin-bottom: 16px;
+                }
+
+                h4{
+                    width: 100%;
+                }
+
+                .title-container{
+                    margin-right: 0;
+                    margin: 0 auto;
+                    width: calc(100% - 70px);
+                    text-align: center;
+                }
+                .select-container{
+                    margin-top: 0;
+                    margin-bottom: 38px;
+
+                }
+            }
+            .slider-image{
+                height: 394px;
+                width: 665px;
+                border-radius: 53px;
+
+                .image-container{
+    
+                    img{
+                        height: 324px;
+                        width: 95%;
+                        margin-left: 0;
+                    }
+
+                    .carousel-image1{
+                        height: 330px;
+                        margin-top: 35px;
+                        margin-left: 40px;
                     }
                 }
             }

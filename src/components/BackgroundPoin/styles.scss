@@ -23,3 +23,18 @@
         background-position: 670px 7px, 300px 1159px, 380px 4421px;
     }
 }
+
+@media screen and (max-width: 1023px){
+    .background-point{
+        background-image: url("./1.png"), url('./2.png'), url("./3.png");
+        transform: translateX(-30%);
+        background-size: 598px 787px, 958px 1516px, 698px 1434px;
+        background-position: 670px 7px, 270px 770px, 140px 3170px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .background-point{
+        display: none;
+    }
+}

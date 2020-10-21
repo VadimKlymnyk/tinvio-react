@@ -4,7 +4,7 @@ import './styles.scss'
 
 function Form() {
     return (
-        <div className='base-form'>
+        <div id='form-get-started' className='base-form'>
             <div className='form-items'>
                 <div className='form-title'><h3>Hi, we are Tinvio! And you?</h3></div>
                 <div className='form-item'>
@@ -26,13 +26,13 @@ function Form() {
                     <div className='form-item'>
                         <div className='input-container'>
                             <input className='main-phone' ></input>
-                            <img src={icon}></img>
+                            <img alt='' src={icon}></img>
                         </div>
                     </div>
                 </div>
                 <div className='form-footer'>
                     <button>Get Started</button>
-                    <p>No spam, promise 🙌</p>
+                    <p>No spam, promise <span role='img' aria-label="promise">🙌</span></p>
                 </div>
             </div>
         </div>

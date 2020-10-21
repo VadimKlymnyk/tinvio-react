@@ -12,12 +12,12 @@ const listLogo = [GoCheken, Jolliebean, Bens, SimplyWrapps, Italian]
 function Partners() {
     return (
         <section className='section-two'>
-            <img className='img-home-page' src={HomePageShadow}></img>
+            <img alt='' className='img-home-page' src={HomePageShadow}></img>
             <div className='container'>
                 <h1>Trusted by 1000+ partners across APAC</h1>
                 <ul className='list-logo'>
                     {listLogo.map((logo, i) => <li key={Date.now()+i}>
-                        <img src={logo}></img>
+                        <img alt='' src={logo}></img>
                         </li>
                     )}
                     

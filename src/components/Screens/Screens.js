@@ -36,10 +36,10 @@ function Screens() {
                 <div className='list-screen'>
                     {list.map((item, i) => 
                         <div key={Date.now()+i} className='container-screen'>
-                            <img className='screen-image' src={item.image}></img>
+                            <img alt='' className='screen-image' src={item.image}></img>
                             <div className='screen-footer'>
                                 <h5>{item.text}</h5>
-                                <img src={item.icon}></img>
+                                <img alt='' src={item.icon}></img>
                             </div>
                         </div>
                     )}

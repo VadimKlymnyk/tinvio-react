@@ -37,6 +37,12 @@
     }
 }
 
+@media screen and (max-width: 1023px) {
+    .base{
+        margin: 0 auto;
+    }
+}
+
 @font-face {
     font-family: AppleColorEmoji;
     src: url('../../fonts/AppleColorEmoji.ttf');

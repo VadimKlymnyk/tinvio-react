@@ -3,7 +3,8 @@
 
     .communication-container{
         
-        display: flex;
+        display: grid;
+        grid-template-columns: 60% 40%;
         margin: 0px auto;
         justify-content: center;
         max-width: 1540px;
@@ -11,8 +12,6 @@
         padding-top: 72px;
 
         .communication-image{
-            // margin-top: 122px;
-            // padding-left: 50px;
             padding-right: 122px;
             z-index: 2;
 
@@ -54,7 +53,6 @@
                     z-index: 10;
                     font-size: 13px;
                     font-weight: 700;
-                    // font-weight: bold;
                     letter-spacing: 1px;
                     color: #787c80;
 
@@ -108,11 +106,28 @@
     }
 }
 
+@media screen and (max-width: 1279px) {
+    .section-four{
+        .communication-container{
+            .communication-image{
+                padding-right: 52px;
+                .image-container{
+                    max-width: 580px;
+                }
+            }
+            .communication-menu{
+                width: 398px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .section-four{
         height: 875px;
     
         .communication-container{
+            display: flex;
             padding-top: 64px;
             flex-direction: column-reverse;
             text-align: center;
@@ -121,8 +136,11 @@
             .communication-image{
                 padding: 0;
                 position: absolute;
-                margin: 0 13%;
-                max-width: 550px;
+                margin: 0 calc(50% - 280px);
+
+                .image-container{
+                    width: 540px;
+                }
             }
     
             .communication-menu{
@@ -145,6 +163,27 @@
                 h4{
                     margin: 0 auto;
                     width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-four{
+        height: 750px;
+    
+        .communication-container{
+            .communication-image{
+                margin: 0 calc(50% - 190px);
+
+                .image-container{
+                    width: 367px;
+                }
+            }
+            .communication-menu{
+                .divider {
+                    margin: 172px auto;
                 }
             }
         }
