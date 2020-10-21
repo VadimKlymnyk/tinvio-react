@@ -85,7 +85,7 @@ footer{
 
 @media screen and (max-width: 767px) {
     footer{
-        height: 546px;
+        height: auto;
         .information{
             padding-top: 48px;
             flex-direction: column;      
@@ -99,9 +99,10 @@ footer{
                 align-items: center;
                 &::before{
                     content: '';
-                    display: none;
+                    display: none; 
                 }
                 a{
+                    margin-left: 0;
                     padding-bottom: 24px;
 
                     &:last-child{
@@ -114,6 +115,9 @@ footer{
                     content: '';
                     display: none;
                 }
+                a:first-child{
+                    margin-left: 0;
+                }
                 a:last-child{
                     margin-right: 0;
                 }
@@ -125,7 +129,17 @@ footer{
                 bottom: 16px;
             }
             .application{
-                margin: 20px auto;
+                margin: 40px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                a:first-child{
+                    margin-right: 8px;
+                }
+                a:last-child{
+                    margin-left: 8px;
+                }
             }
         }
     }

@@ -171,9 +171,10 @@
 
 @media screen and (max-width: 767px) {
     .section-four{
-        height: 750px;
+        height: auto;
     
         .communication-container{
+            padding-bottom: 67px;
             .communication-image{
                 margin: 0 calc(50% - 190px);
 
@@ -184,6 +185,9 @@
             .communication-menu{
                 .divider {
                     margin: 172px auto;
+                }
+                h4{
+                    width: 100%;
                 }
             }
         }

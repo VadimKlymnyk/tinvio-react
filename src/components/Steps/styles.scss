@@ -34,6 +34,7 @@
         .steps{
             display: flex;
             justify-content: space-around;
+            position: relative;
 
             .container-step{
                 text-align: center;
@@ -70,7 +71,7 @@
                 }
                 &:nth-child(2):before, &:nth-child(1):before{
                     content: '';
-                    width: 16%;
+                    width: calc(100% - 875px);
                     height: 2px;
                     opacity: 0.1;
                     background-color: #21272e;
@@ -89,7 +90,7 @@
             .steps{
                 .container-step{
                     &:nth-child(2):before, &:nth-child(1):before{
-                        width: 20%;
+                        width: calc(33% - 115px);
                     }
                 }  
             }

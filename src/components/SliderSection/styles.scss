@@ -18,7 +18,8 @@
             margin-right: 75px;
 
             .title-container{
-                min-height: 365px;
+                min-height: 375px;
+                height: 200px;
             }
 
             h1{
@@ -204,8 +205,8 @@
 
 @media screen and (max-width: 767px) {
     .section-three{
-        padding-bottom: 0;
-        height: 800px;
+        padding-bottom: 67;
+        height: auto;
     
         .slider{
             margin-left: 0;
@@ -214,12 +215,14 @@
                 flex-direction: column-reverse;
                 align-items: center;
                 width: 100%;
+                min-width: auto;
 
                 h1{
                     font-size: 28px;
                     line-height: 39px;
                     margin: 0 auto;
                     margin-bottom: 16px;
+                    width: 100%;
                 }
 
                 h4{
@@ -231,6 +234,7 @@
                     margin: 0 auto;
                     width: calc(100% - 70px);
                     text-align: center;
+                    height: auto;
                 }
                 .select-container{
                     margin-top: 0;

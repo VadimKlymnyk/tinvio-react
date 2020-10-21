@@ -12,13 +12,13 @@ const list = [
         image: Orders,
     },
     {
-        title: 'Title 2',
-        text: 'text 2',
+        title: 'Grow with insights',
+        text: 'Manage new revenue opportunities with personalized catalogs, unlock business insights on sales volume, analyze order habits and trends',
         image: Analytics,
     },
     {
-        title: 'Title 3',
-        text: 'text 3',
+        title: 'Cut operational costs',
+        text: 'Receive structured orders, digitize invoices, automate workflows, collect payments, or connect directly to your ERP systems',
         image: Costs,
     }
 ]
@@ -34,7 +34,6 @@ function SliderSection() {
         dots[sliderIndex].className += " active";
         if(sliderIndex === 1){
             const img = document.getElementsByClassName("carousel-image");
-            console.log(img)
         }
     }, [sliderIndex])
 

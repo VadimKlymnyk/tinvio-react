@@ -53,8 +53,9 @@ function Communication() {
                             <button id='btn-after' onClick={handleAfter}>AFTER</button>
                         </div>
                         <div className='divider'/>
-                        <h3>Old-School Chaos</h3>
-                        <h4>Unstructured orders across multiple apps and inboxes. New message notifications and alerts every few minutes</h4>
+                        {visible ? <h3>New-age Control</h3> : <h3>Old-School Chaos</h3>}
+                        {visible ? <h4>Real-time chats with all your customers organized in one place. Perfectly formated orders designed to prevent mistakes</h4>
+                         : <h4>Unstructured orders across multiple apps and inboxes. New message notifications and alerts every few minutes</h4>}
                     </div>
                 </div>
             </div>
