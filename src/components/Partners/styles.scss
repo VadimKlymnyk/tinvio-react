@@ -78,6 +78,11 @@
         }
         .list-logo{
             flex-wrap: nowrap;
+            justify-content: center;
+            padding-left: calc(450px - 100%);
+            img{
+                height: 77px;
+            }
         }
     }
 }

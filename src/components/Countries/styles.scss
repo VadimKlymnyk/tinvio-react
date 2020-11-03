@@ -10,14 +10,14 @@
         width: 240px;
         height: 110px;
         padding: 20px 24px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
 
         .item-container{
             display: flex;
             text-align: center;
-            margin-bottom: 8px;
+            margin-bottom: 11px;
 
             span{
                 font-family: AppleColorEmoji;

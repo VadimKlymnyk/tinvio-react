@@ -116,6 +116,7 @@
                         
                         h4{
                             width: 280px;
+                            height: auto;
                         }
                     }
                     .step-image{
@@ -123,14 +124,18 @@
                     }
 
                     &:nth-child(2){
-                        margin: 80px auto;
+                        margin: 104px auto;
                     }
 
                     &:nth-child(2):before, &:nth-child(1):before{
                         width: 2px;
                         height: 56px;
-                        margin-top: 149px;
+                        margin-top: 148px;
                         margin-left: 28px;
+                    }
+
+                    &:nth-child(2):before{
+                        margin-top: 167px;
                     }
                 }  
             }
